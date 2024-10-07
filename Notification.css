@@ -1,0 +1,419 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    height: 100vh;
+    margin: 0;
+}
+
+#backround{
+    height:100%;
+    display: flex;
+    justify-content:center;
+	
+}
+
+/* Main Content Area */
+#diff {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin-top: 2%;
+	flex-direction: column;
+}
+
+#head{
+	width: 100%;
+    height: 7%;
+    background:#ffffff;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+#head h4{
+	margin-top: 11px;
+	margin-left:1%;
+    font-size: 26px;
+    color: #555;
+    letter-spacing: 1px;
+}
+#cardspace{
+	margin-top: 7px;
+	background:#ffffff;
+	
+}
+
+
+#vicharvanuBaki{
+	 width: 25%;
+	
+}
+
+#Seeking2{
+	display: flex;
+	gap:20px;
+}
+
+/* Content Area */
+#content-area {
+    width: 60%;
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightsteelblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Section */
+#profile {
+    background-color: #400040;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+}
+
+
+#profile h2 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 14px;
+}
+
+#part{
+	width:77% ;
+}
+
+#procon{
+	display:flex;
+	width:100%;
+	
+}
+
+.name{
+	font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 17px;
+    height: 30px;
+}
+
+#content{
+    font-weight: bold;
+    color: #000000;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.Email{
+	font-weight: bold;
+	margin-top: 7px;
+	margin-left: 20px;
+}
+
+
+
+.Email i , #content i{
+	margin-Right: 10px;
+	
+}
+
+/* Job Info Section */
+.job-info{
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.6;
+    width: 40%;
+    height: 76%;
+}
+/* Labels */
+.job-info .label{
+    font-weight: bold;
+    color: #333333;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Content */
+.job-info .content{
+    margin-top: 5px;
+    padding-left: 5px;
+    display: block; /* Ensures content starts on a new line */
+}
+
+
+
+
+#Seeking{
+	display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 20px;
+    width: 100%;
+    align-content: center;
+        flex-direction: row;
+}
+
+
+
+
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    width: 50%;
+    height: 87%;
+    margin-top: 19px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card a{
+	text-decoration: none;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Card Header */
+.card-header {
+    padding: 15px;
+    background-color: #f7f9fc;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.job-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.company-name {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Card Body */
+.card-body {
+    padding: 15px;
+}
+
+.experience, .salary, .location {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+.job-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.skills {
+    font-size: 14px;
+    color: #c10000;
+}
+
+/* Card Footer */
+.card-footer {
+    padding: 10px 15px;
+    background-color: #f7f9fc;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.content-area {
+    background: #c4c4c487;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.content-area:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 100px; /* Increased size for better visibility */
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+    transition: transform 0.3s;
+}
+
+.profile-picture img:hover {
+    transform: scale(1.05);
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-info .name {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #004080; /* Brand color */
+    margin-bottom: 5px;
+}
+
+.profile-info .content {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #007acc; /* Consistent label color */
+}
+
+.job-seeking-info {
+    margin-top: 10px;
+}
+
+.icon.edit-icon {
+    margin-left: 10px;
+    color: #ff6600;
+    transition: color 0.3s;
+}
+
+.icon.edit-icon:hover {
+    color: #cc5200;
+}
+
+a {
+    text-decoration: none;
+    color: #000080; /* Link color */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+span {
+    color: #c10000; /* Gray color for "No Resume Available" */
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #dash_main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #logo {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #box_nav {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    #nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #pro_pic_div {
+        text-align: center;
+    }
+
+    #Seeking {
+        padding: 15px 20px;
+    }
+
+    .job-detail {
+        font-size: 14px;
+    }
+
+    #Tech {
+        font-size: 16px;
+    }
+
+    #n {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    #dash_main {
+        padding: 10px 20px;
+    }
+
+    #nav a {
+        font-size: 14px;
+    }
+
+    #logo h2 {
+        font-size: 22px;
+    }
+
+    #Seeking {
+        padding: 10px 15px;
+    }
+
+    .job-detail {
+        font-size: 12px;
+    }
+
+    #Tech {
+        font-size: 14px;
+    }
+
+    #n {
+        font-size: 11px;
+    }
+}

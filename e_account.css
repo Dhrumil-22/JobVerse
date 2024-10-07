@@ -1,0 +1,111 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #d5e4e7;
+    color: #333;
+}
+
+
+#diff {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-area {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.content-area:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 100px; /* Increased size for better visibility */
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+    transition: transform 0.3s;
+}
+
+.profile-picture img:hover {
+    transform: scale(1.05);
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-info .name {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #007acc; /* Brand color */
+    margin-bottom: 5px;
+}
+
+.profile-info .content {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #007acc; /* Consistent label color */
+}
+
+.job-seeking-info {
+    margin-top: 10px;
+}
+
+.icon.edit-icon {
+    margin-left: 10px;
+    color: #ff6600;
+    transition: color 0.3s;
+}
+
+.icon.edit-icon:hover {
+    color: #cc5200;
+}
+
+a {
+    text-decoration: none;
+    color: #007acc; /* Link color */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+span {
+    color: #999; /* Gray color for "No Resume Available" */
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

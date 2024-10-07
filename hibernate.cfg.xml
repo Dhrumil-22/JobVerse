@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "file:///C:/Users/91940/workspace/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/demo_db</property>
+
+		<property name="hibernate.connection.username">root</property>
+
+		<property name="hibernate.connection.password">6123</property>
+
+		<property name="hibernate.connection.pool_size">10</property>
+
+		<property name="show_sql">true</property>
+
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		
+		<mapping class="com.VO.JS_RegVO"/>  
+		
+		<mapping class="com.VO.E_RegVO"/>  
+		
+		<mapping class="com.VO.E_POST_RegVO"/> 
+		
+		<mapping class="com.VO.E_POST_RegVO2"/> 
+		
+		<mapping class="com.VO.Applied_RegVO"/>  
+		
+		
+				
+	</session-factory>
+
+</hibernate-configuration>

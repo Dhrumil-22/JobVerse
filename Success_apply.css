@@ -1,0 +1,261 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #d5e4e7;
+    color: #333;
+}
+
+header {
+    background: #ffffff;
+    color: #333;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.4s, color 0.4s;
+}
+
+nav a:hover {
+    background: #f0f0f0;
+    color: #007acc;
+    text-decoration: none;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left:-18px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f9f9f9;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+.auth-button{
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #555b5c;
+    color: white;
+    border: none;
+    border-radius: 4px;   
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+}
+
+.auth-button:hover {
+    background-color: #151717;
+}
+ 
+
+/* Container Adjustment */
+.container {
+    margin-top: 100px;
+    margin-left: 37%; /* Adjust margin to account for fixed header */
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Login Box Styles */
+.login-box {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin: auto; /* Center the login box */
+    text-align: center; /* Center text inside the box */
+    position: relative; /* For positioning the link */
+    animation: bounceIn 1s ease-out; /* Animation for bounce-in effect */
+}
+
+/* Label Styles */
+.login-box label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px; /* Space below the label */
+    display: block; /* Ensures label takes full width */
+    animation: fadeIn 1s ease-out; /* Animation for fade-in effect */
+}
+
+/* Link Styles */
+.login-box a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #443c35;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
+    animation: slideIn 1s ease-out; /* Animation for slide-in effect */
+}
+
+.login-box a:hover {
+    background-color: #575049;
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Icon Styles */
+.login-box i {
+    font-size: 20px;
+    color: #443c35;
+    margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #dash_main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #logo {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #box_nav {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    #nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #Log-Reg {
+        flex-direction: column;
+    }
+
+    .auth-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        margin-left: 5%; /* Adjust margin for smaller screens */
+    }
+
+    .login-box {
+        padding: 20px;
+    }
+
+    .login-box label {
+        font-size: 14px; /* Adjusted for smaller screens */
+    }
+
+    .login-box a {
+        font-size: 14px; /* Adjusted button font size */
+    }
+}
+
+@media (max-width: 480px) {
+    #dash_main {
+        padding: 10px 20px;
+    }
+
+    #nav a {
+        font-size: 14px;
+    }
+
+    #logo h2 {
+        font-size: 22px;
+    }
+
+    .auth-button {
+        font-size: 12px;
+    }
+
+    .container {
+        margin-left: 2%; /* Further adjustment for very small screens */
+    }
+
+    .login-box label {
+        font-size: 12px; /* Further adjust font size for smaller screens */
+    }
+
+    .login-box a {
+        font-size: 12px; /* Further adjust button font size */
+    }
+}

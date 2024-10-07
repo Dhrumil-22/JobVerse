@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #d5e4e7;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#acc {
+    margin-top: 30px;
+}
+
+
+/* Content Area */
+#content-area-Help {
+    flex: 1;
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#Help {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+#Help h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #Set_main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #side-bar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #eaeaea;
+        border-radius: 0; /* Remove rounded edges on small screens */
+    }
+
+    #side_nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #content-area-Help {
+        padding: 10px;
+    }
+
+    #Help {
+        padding: 15px;
+    }
+
+    #nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #Set_main {
+        padding: 10px 20px;
+    }
+
+    #logo h2 {
+        font-size: 22px;
+    }
+
+    #side_nav a {
+        padding: 8px 0;
+        font-size: 14px;
+    }
+
+    #Help h2 {
+        font-size: 18px;
+    }
+
+    #nav a {
+        font-size: 14px;
+    }
+}

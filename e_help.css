@@ -1,0 +1,270 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f0ea;
+    color: #333;
+}
+/* About Us Content */
+.about-content {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-header h1 {
+    font-size: 36px;
+    color: #443c35;
+    margin-bottom: 10px;
+}
+
+.about-header p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Mission Section */
+.mission-section {
+    margin-bottom: 30px;
+}
+
+.mission-section h2 {
+    font-size: 28px;
+    color: #443c35;
+    margin-bottom: 15px;
+}
+
+.mission-section p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Team Section */
+.team-section {
+    margin-bottom: 30px;
+}
+
+.team-section h2 {
+    font-size: 28px;
+    color: #443c35;
+    margin-bottom: 15px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    color: #443c35;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* History Section */
+.history-section {
+    margin-bottom: 30px;
+}
+
+.history-section h2 {
+    font-size: 28px;
+    color: #443c35;
+    margin-bottom: 15px;
+}
+
+.history-section p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Contact Content */
+.contact-content {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-header h1 {
+    font-size: 36px;
+    color: #443c35;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.contact-form,
+.contact-details {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2,
+.contact-details h2 {
+    font-size: 24px;
+    color: #443c35;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #443c35;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #575049;
+}
+
+.contact-details p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #nav {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-header h1 {
+        font-size: 28px;
+    }
+
+    .contact-header p {
+        font-size: 14px;
+    }
+
+    .contact-form h2,
+    .contact-details h2 {
+        font-size: 20px;
+    }
+
+    .contact-details p {
+        font-size: 14px;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-header h1 {
+        font-size: 28px;
+    }
+
+    .about-header p, .mission-section p, .history-section p, .team-member p {
+        font-size: 14px;
+    }
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+}
